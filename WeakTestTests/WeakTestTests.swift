@@ -14,7 +14,7 @@ class WeakTestTests: XCTestCase {
     var strongMock: WeakRef? = WeakRef()
     func testWeakVarDeallocation() {
         
-        weak var weakMock = strongMock
+        var weakMock = strongMock
         
         print("weakMock is \(weakMock)")
         
